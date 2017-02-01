@@ -2,11 +2,12 @@
 
   namespace tests\Lib;
 
-  use Lib\StringFormatter;
+use Lib\StringFormatter;
 
-  class StringFormatterTest extends \PHPUnit_Framework_TestCase {
-
-    public function testPrefix() {
+  class StringFormatterTest extends \PHPUnit_Framework_TestCase
+  {
+      public function testPrefix()
+      {
 
       // Déclaration de la classe
       $string = new StringFormatter();
@@ -22,9 +23,10 @@
 
       // Verification du resultat
       $this->assertEquals($result2, "prefixTest2");
-    }
+      }
 
-    public function testSuffix() {
+      public function testSuffix()
+      {
 
       // Déclaration de la classe
       $string = new StringFormatter();
@@ -40,10 +42,10 @@
 
       // Verification du resultat
       $this->assertEquals($result2, "suffixOther");
+      }
 
-    }
-
-    public function testToCamelCase() {
+      public function testToCamelCase()
+      {
 
       // Déclaration de la classe
       $string = new StringFormatter();
@@ -53,9 +55,10 @@
 
       // Verification du resultat
       $this->assertEquals($result, "stringTested");
-    }
+      }
 
-    public function testConcatString() {
+      public function testConcatString()
+      {
 
       // Déclaration de la classe
       $string = new StringFormatter();
@@ -65,7 +68,5 @@
 
       // Vérification le resultat
       $this->assertEquals($result, "ATestagain");
-
-    }
-
+      }
   }
